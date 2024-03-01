@@ -1,0 +1,352 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "FeedbackManager",
+    "dateExported": "2024-02-28T07:04:56.682Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "c02212fd-4ae9-4791-b7c0-35e4726ed5c5",
+            "name": "User",
+            "containerId": "",
+            "created": "2024-02-28T06:10:05.243Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "15f70212-2523-4906-828b-2b30e0c0ce01",
+            "name": "Publication",
+            "containerId": "",
+            "created": "2024-02-28T06:10:05.244Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "11b5d0ca-ecec-415f-b285-bea8c5e3e2ab",
+            "name": "Comment",
+            "containerId": "",
+            "created": "2024-02-28T06:10:05.245Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "38ec9068-ac82-4a6d-8ae3-74a1e7e3c433",
+            "colId": "c82b05bb-6a6f-4ff0-831c-c3bbac9e5f5e",
+            "containerId": "c02212fd-4ae9-4791-b7c0-35e4726ed5c5",
+            "name": "register",
+            "url": "/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-28T06:10:05.243Z",
+            "modified": "2024-02-28T06:47:46.162Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Carlos"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Martínez"
+                    },
+                    {
+                        "name": "email",
+                        "value": "cmartinez@gmail.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "administrador"
+                    },
+                    {
+                        "name": "username",
+                        "value": "cmartinez"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "39f504ca-fb08-46b1-b598-349a5e79560b",
+            "colId": "c82b05bb-6a6f-4ff0-831c-c3bbac9e5f5e",
+            "containerId": "c02212fd-4ae9-4791-b7c0-35e4726ed5c5",
+            "name": "login",
+            "url": "/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-28T06:10:05.244Z",
+            "modified": "2024-02-28T07:03:44.323Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "chernandez"
+                    },
+                    {
+                        "name": "password",
+                        "value": "administrador"
+                    },
+                    {
+                        "name": "email",
+                        "value": "cmartinez@gmail.com",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "94987afe-a7f8-45c8-baf3-e8081f72284b",
+            "colId": "c82b05bb-6a6f-4ff0-831c-c3bbac9e5f5e",
+            "containerId": "c02212fd-4ae9-4791-b7c0-35e4726ed5c5",
+            "name": "update",
+            "url": "/updateUser",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-02-28T06:10:05.245Z",
+            "modified": "2024-02-28T06:57:04.174Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlZDcxMmNkNzM1MmRhNDhlNDRjM2UiLCJ1c2VybmFtZSI6ImNtYXJ0aW5leiIsImVtYWlsIjoiY21hcnRpbmV6QGdtYWlsLmNvbSIsImlhdCI6MTcwOTEwMzMzNiwiZXhwIjoxNzA5MTE3NzM2fQ.Mdzs4jPN4lUSzedLMZgiU7769xHqNpPTDeUfYgBe_No"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "chernandez",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "passwordOld",
+                        "value": "administrador456",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "passwordNew",
+                        "value": "administrador",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "name",
+                        "value": "Cesar"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "email",
+                        "value": "chernandez@gmail.com",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "ce72e67a-3848-4bed-838e-de117e0702c1",
+            "colId": "c82b05bb-6a6f-4ff0-831c-c3bbac9e5f5e",
+            "containerId": "15f70212-2523-4906-828b-2b30e0c0ce01",
+            "name": "newPublication",
+            "url": "/publication/newPublication",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-02-28T06:10:05.246Z",
+            "modified": "2024-02-28T06:41:55.222Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlY2Y1NWUxZTgwZjUxMTIyNmUzZmMiLCJ1c2VybmFtZSI6ImNoZXJuYW5kZXoiLCJlbWFpbCI6ImNoZXJuYW5kZXpAZ21haWwuY29tIiwiaWF0IjoxNzA5MTAyNDM5LCJleHAiOjE3MDkxMTY4Mzl9.noLMQ1Mapa8qN4P8buefMaBVa_uFs1R8I8ZGvfXtdUc"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "Beca Juan Bautista"
+                    },
+                    {
+                        "name": "category",
+                        "value": "Noticia"
+                    },
+                    {
+                        "name": "mainText",
+                        "value": "Los nominados a las becas Juan Baustista, podrán ganarlas y romper el record del año pasado?"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "f739499c-3a06-4ff6-8641-f26cae214604",
+            "colId": "c82b05bb-6a6f-4ff0-831c-c3bbac9e5f5e",
+            "containerId": "15f70212-2523-4906-828b-2b30e0c0ce01",
+            "name": "updatePublication",
+            "url": "/publication/updatePublication/65ded5b3cd7352da48e44c2f",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-02-28T06:10:05.247Z",
+            "modified": "2024-02-28T06:45:35.756Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlY2Y1NWUxZTgwZjUxMTIyNmUzZmMiLCJ1c2VybmFtZSI6ImNoZXJuYW5kZXoiLCJlbWFpbCI6ImNoZXJuYW5kZXpAZ21haWwuY29tIiwiaWF0IjoxNzA5MTAyNDM5LCJleHAiOjE3MDkxMTY4Mzl9.noLMQ1Mapa8qN4P8buefMaBVa_uFs1R8I8ZGvfXtdUc"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "Beca Juan Bautista Gutierrez"
+                    },
+                    {
+                        "name": "mainText",
+                        "value": "Ya se dió el listado de los seleccionados"
+                    },
+                    {
+                        "name": "category",
+                        "value": "Alertas"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "eb59deba-cf03-47cf-8571-d3b9ca877a50",
+            "colId": "c82b05bb-6a6f-4ff0-831c-c3bbac9e5f5e",
+            "containerId": "15f70212-2523-4906-828b-2b30e0c0ce01",
+            "name": "deletePublication",
+            "url": "/publication/deletePublication/65ded5b3cd7352da48e44c2f",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-02-28T06:10:05.248Z",
+            "modified": "2024-02-28T06:46:25.558Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlY2Y1NWUxZTgwZjUxMTIyNmUzZmMiLCJ1c2VybmFtZSI6ImNoZXJuYW5kZXoiLCJlbWFpbCI6ImNoZXJuYW5kZXpAZ21haWwuY29tIiwiaWF0IjoxNzA5MTAyNDM5LCJleHAiOjE3MDkxMTY4Mzl9.noLMQ1Mapa8qN4P8buefMaBVa_uFs1R8I8ZGvfXtdUc"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "8f31ac8f-4f7a-4ade-b7c5-88569b2ff9b9",
+            "colId": "c82b05bb-6a6f-4ff0-831c-c3bbac9e5f5e",
+            "containerId": "15f70212-2523-4906-828b-2b30e0c0ce01",
+            "name": "myPublications",
+            "url": "/publication/myPublications",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-02-28T06:10:05.249Z",
+            "modified": "2024-02-28T07:04:00.961Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlY2Y1NWUxZTgwZjUxMTIyNmUzZmMiLCJ1c2VybmFtZSI6ImNoZXJuYW5kZXoiLCJlbWFpbCI6ImNoZXJuYW5kZXpAZ21haWwuY29tIiwiaWF0IjoxNzA5MTAzODI0LCJleHAiOjE3MDkxMTgyMjR9.ZmZfx1lHVB3eZJ3d58En1rvMxNsgtyAtG9tj7uMjf98"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "45faa6cd-100d-404a-ba31-cf3af49d352a",
+            "colId": "c82b05bb-6a6f-4ff0-831c-c3bbac9e5f5e",
+            "containerId": "11b5d0ca-ecec-415f-b285-bea8c5e3e2ab",
+            "name": "addComment",
+            "url": "/comment/addComment/65ded6cccd7352da48e44c39",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-02-28T06:10:05.250Z",
+            "modified": "2024-02-28T06:58:56.068Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlZDcxMmNkNzM1MmRhNDhlNDRjM2UiLCJ1c2VybmFtZSI6ImNtYXJ0aW5leiIsImVtYWlsIjoiY21hcnRpbmV6QGdtYWlsLmNvbSIsImlhdCI6MTcwOTEwMzQyNCwiZXhwIjoxNzA5MTE3ODI0fQ.zCk1cqf5_VQtfExHh-gl097swk-CWRq82bNt9lSfBYU"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "comment",
+                        "value": "Hay de mecánica?"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "7dfc9e5e-9a66-4bb7-90c8-1db12992ef7e",
+            "colId": "c82b05bb-6a6f-4ff0-831c-c3bbac9e5f5e",
+            "containerId": "11b5d0ca-ecec-415f-b285-bea8c5e3e2ab",
+            "name": "updateComment",
+            "url": "/comment/updateComment/65ded9b02a9d98e33f482d10",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2024-02-28T06:10:18.444Z",
+            "modified": "2024-02-28T07:01:41.002Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlZDcxMmNkNzM1MmRhNDhlNDRjM2UiLCJ1c2VybmFtZSI6ImNtYXJ0aW5leiIsImVtYWlsIjoiY21hcnRpbmV6QGdtYWlsLmNvbSIsImlhdCI6MTcwOTEwMzQyNCwiZXhwIjoxNzA5MTE3ODI0fQ.zCk1cqf5_VQtfExHh-gl097swk-CWRq82bNt9lSfBYU"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "comment",
+                        "value": "Hay de electrónica?"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "f2553898-b1c4-472b-86c6-61d180df8a20",
+            "colId": "c82b05bb-6a6f-4ff0-831c-c3bbac9e5f5e",
+            "containerId": "11b5d0ca-ecec-415f-b285-bea8c5e3e2ab",
+            "name": "deleteComment",
+            "url": "/comment/deleteComment/65ded9b02a9d98e33f482d10",
+            "method": "DELETE",
+            "sortNum": 100000,
+            "created": "2024-02-28T06:10:56.760Z",
+            "modified": "2024-02-28T07:03:08.379Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlZDcxMmNkNzM1MmRhNDhlNDRjM2UiLCJ1c2VybmFtZSI6ImNtYXJ0aW5leiIsImVtYWlsIjoiY21hcnRpbmV6QGdtYWlsLmNvbSIsImlhdCI6MTcwOTEwMzQyNCwiZXhwIjoxNzA5MTE3ODI0fQ.zCk1cqf5_VQtfExHh-gl097swk-CWRq82bNt9lSfBYU"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2065"
+        }
+    }
+}
